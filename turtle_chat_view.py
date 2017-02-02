@@ -11,22 +11,34 @@
 #####################################################################################
 import turtle
 from turtle_chat_client import Client
-from turtle_chat_widgets import Button and TextInput
+from turtle_chat_widgets import Button , TextInput
 
 
 #####################################################################################
 #                                   TextBox                                         #
 #####################################################################################
 #Make a class called TextBox, which will be a subclass of TextInput.
-class TextBox (TextInput)
+class TextBox (TextInput):
 #Because TextInput is an abstract class, you must implement its abstract
 #methods.  There are two:
 #
-def draw_box(self):
-    
+    def draw_box(self):
+        self.turtle.penup()
+        self.turtle.goto(500, 500)
+        self.turtle.pendown()
+        self.turtle.goto(400,500)
+        self.turtle.goto(400,450)
+        self.turtle.goto(500,450)
+        self.turtle.goto(500,500)
 
 
 #write_msg
+        
+    def write_msg(self):
+        ######self.writer(450,450)
+        pass
+        
+        
 #
 #Hints:
 #1. in draw_box, you will draw (or stamp) the space on which the user's input
