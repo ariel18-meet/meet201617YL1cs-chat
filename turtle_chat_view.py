@@ -36,7 +36,10 @@ class TextBox (TextInput):
         
     def write_msg(self):
         ######self.writer(450,450)
-        pass
+        self.writer.clear()
+        self.writer.write(self.new_msg)
+        
+        
         
         
 #
@@ -75,6 +78,11 @@ class TextBox (TextInput):
 #      you send messages and update message displays.
 #####################################################################################
 #####################################################################################
+
+class SendButton(Button):
+    #def fun
+
+            
 
 
 ##################################################################
