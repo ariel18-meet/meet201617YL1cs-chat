@@ -80,7 +80,19 @@ class TextBox (TextInput):
 #####################################################################################
 
 class SendButton(Button):
-    #def fun
+    def __init__(self,view):
+        super(SendButton,self).__init__()
+        self.view=view
+
+
+    def fun(self, x, y):
+        self.view.send_msg()
+        
+        
+        
+                 
+
+    
 
             
 
